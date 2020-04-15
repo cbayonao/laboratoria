@@ -13,9 +13,17 @@ class Home extends Component {
 
   render() {
     return(
-      <div className="col-md-6">
-      <h1>You are home, Now ready to DO posts manager</h1>
-      <button class="btn btn-danger" onClick={this.logout}>Logout</button>
+      <div className="container">
+      <button className="btn btn-danger" onClick={this.logout}>Logout</button>
+      <h1>Mis Publicaciones de Blog</h1>
+      <div className="form-group">
+      <label>Ingresa tu post:</label>
+      <form action="#" id="formulario">
+      <textarea id="proceso" className="form-control"></textarea>
+      <label></label>
+      <button className="btn btn-primary btn-block">Publicar</button>
+      </form>
+      </div>
       </div>
     );
   }
