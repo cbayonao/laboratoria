@@ -18,6 +18,7 @@ class Login extends Component {
     e.preventDefault();
     fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{}).catch((error) => {
       console.log(error);
+      alert(error.message);
     });
   }
 
@@ -26,6 +27,7 @@ class Login extends Component {
     fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
 	.catch((error) => {
 	  console.log(error);
+	  alert(error.message);
 	})
   }
 
@@ -40,6 +42,7 @@ class Login extends Component {
       <h1>Bienvenido a FaceCool</h1>
       <form>
       <div className="form-group">
+      <label>Si es la primera vez que nos visitas, ingresa tus credenciales y da click en "Regístrate"</label>
       <label>Ingresa tu direccion de Email</label>
       <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email" />
       </div>
