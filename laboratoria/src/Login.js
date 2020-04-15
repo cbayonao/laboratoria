@@ -37,23 +37,22 @@ class Login extends Component {
     return (
       <div className="container">
       <div className="col-md-6">
-      <h1>Welcome to CareLibro</h1>
+      <h1>Bienvenido a FaceCool</h1>
       <form>
       <div className="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <label>Ingresa tu direccion de Email</label>
+      <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email" />
       </div>
-       <div className="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+      <div className="form-group">
+      <label>Ingresa tu contraseña</label>
+      <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Contraseña" />
       </div>
-      <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
-      <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
+      <button type="submit" onClick={this.login} className="btn btn-primary">Ingresa</button>
+      <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Regístrate</button>
       </form>
       </div>
       </div>
     );
-}
+  }
 }
 export default Login;

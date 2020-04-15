@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import fire from './config/Fire';
 import Login from './Login';
 import Home from './Home';
+
 import './App.css';
 
 
@@ -31,11 +32,19 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div className="App">
-      {this.state.user ? (<Home />) : (<Login />)}
-      </div>
-    );
+    if (this.state.user) {
+      return (
+	<div>
+	<Home />
+	</div>
+      );
+    } else {
+      return (
+	<div>
+	<Login />
+	</div>
+      );
+    }
   }
 }
 export default App;
