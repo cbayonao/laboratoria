@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import fire from './config/Fire';
+import fire from './Firebase';
 import Login from './Login';
 import Home from './Home';
 

@@ -7,7 +7,7 @@ const Post = (props) => {
     <h5 className="card-title">{props.title}</h5>
     <p className="card-text">{props.content}</p>
     <p>Autor: {props.author}</p>
-    <p>Id: <span class="badge badge-secondary">{props.id}</span></p>
+    <p>Id: <span className="badge badge-secondary">{props.id}</span></p>
     <a href="#" className="card-link">Editar</a>
     <a href="#" className="card-link">Eliminar</a>
     </div>

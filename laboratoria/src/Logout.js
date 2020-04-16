@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import fire from './config/Fire';
+import fire from './Firebase';
 
 
 class Logout extends Component {
@@ -15,7 +15,7 @@ class Logout extends Component {
   render() {
     return(
       <div className="container">
-      <button class="btn btn-danger" onClick={this.logout}>Logout</button>
+      <button className="btn btn-warning" onClick={this.logout}>Salir</button>
       </div>
     );
   }

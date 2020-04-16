@@ -1,5 +1,6 @@
 import React from 'react';
-import fire from './config/Fire';
+import fire from './Firebase';
+import CreatePost from './CreatePost';
 import Posts from './Posts';
 import Post from './Post';
 import Logout from './Logout'
@@ -7,7 +8,9 @@ import Logout from './Logout'
 function Home(props) {
   return(
     <div>
+    <br/>
     <Logout />
+    <CreatePost />
     <Posts />
     </div>
   )
@@ -16,7 +19,7 @@ function Home(props) {
 function logout() {
   fire.auth().signOut();
   return(
-    <button class="btn btn-danger" onClick={this.logout}>Logout</button>
+    <button className="btn btn-danger" onClick={this.logout}>Logout</button>
   )
 }
 
